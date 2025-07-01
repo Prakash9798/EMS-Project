@@ -1,12 +1,44 @@
-# React + Vite
+# 🧑‍💼 Employee Management System (EMS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A basic Employee Management System built with **React JS** and **Context API**, featuring user **authentication** using a **Mock API**, and a responsive **dashboard UI** with static cards and a hoverable sidebar.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 **Authentication System**
+  - **Register Page**: New users can register using name, email, and password.
+  - **Login Page**: Only users with correct credentials (already registered) can log in.
+  - Auth system is implemented using **Mock API** (mockapi.io).
 
-## Expanding the ESLint configuration
+- 🌐 **Routing**
+  - Navigations handled with `useNavigate()` from **react-router-dom**.
+  - Redirect from login → dashboard, register → login, etc.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📄 **Dashboard**
+  - After successful login, users are redirected to a dashboard page.
+  - Dashboard contains **multiple static cards**:
+    - Attendance Card
+    - Birthday/Anniversary Card
+    - Other info cards
+  - Cards are static but designed using **hover effects** and responsive UI.
+
+- 📂 **Sidebar**
+  - Sidebar opens on **hover**.
+  - Contains navigation items and **Profile** section.
+
+- 👤 **Profile Name Display**
+  - Logged-in user’s name (e.g., "Prakash") is dynamically displayed in the sidebar using **Context API**.
+
+- 🔓 **Logout Functionality**
+  - Clicking on logout in the sidebar redirects the user to the login page.
+  - Clears user session from context.
+
+## 🛠 Tech Stack
+
+- React JS
+- Context API (for global state like user session)
+- React Router DOM
+- Tailwind CSS 
+- MockAPI.io (for user data handling)
+
+
+
